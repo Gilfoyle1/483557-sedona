@@ -21,23 +21,65 @@
           <a href="map.html">Карта штата</a>
         </li>
         <li>
-          <a href="catalog.html">Гостиницы</a>
+          <a class="site-navigation-current">Гостиницы</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="container">
-    <section class="filtres">
+    <form class="filtres" method="get" action="https://echo.htmlacademy.ru">
       <h1 class="visually-hidden">Фильтры товара</h1>
-      <!--здесь будет форма--> 
-    </section>
+      <fieldset class="infrastructure">
+        <legend>Инфраструктура:</legend>
+        <p>
+          <input type="checkbox" name="swimming-pool" id="swimming-pool-filtres">
+          <label for="swimming-pool-filtres">Бассейн</label>
+        </p>
+        <p>
+          <input type="checkbox" name="parking" id="parking-filtres">
+          <label for="parking-filtres">Паркинг</label>
+        </p>
+        <p>
+          <input type="checkbox" name="wi-fi" id="wi-fi-filtres">
+          <label for="wi-fi-filtres">Wi-fi</label>
+        </p>
+      </fieldset>
+      <fieldset class="type of accommodation">
+        <legend>Тип жилья:</legend>
+        <p>
+          <label for="type-hotel">Гостиница:</label>
+          <input type="checkbox" name="hotel" id="type-hotel">
+        </p>
+        <p>
+          <label for="type-motel">Мотель:</label>
+          <input type="checkbox" name="motel" id="type-motel">
+        </p>
+        <p>
+          <label for="type-appartment">Аппартаменты:</label>
+          <input type="checkbox" name="appartment" id="type-appartment">
+        </p>
+      </fieldset>
+      <fieldset class="price-per-day">
+        <legend>Стоимость в сутки(р.):</legend>
+        <!--как правильнее?-->
+       <p>  
+        <input type="text" id="out">
+        <input oninput="out.value=(price.value)" type="range" id="price" min="0" max="6000" step="100" value="0" placeholder="От 0">
+       </p>
+        <p>
+          <input type="text" name="text_range_6000" placeholder="До 6000">
+          <input type="range" name="range_6000" value="6000" min="0" max="6000" step="100">
+        </p>
+      </fieldset>
+       <button type="submit" class="filtres-button button">Показать</button>
+    </form>
     <div class="sort">
       <ul class="sort-list">
         <li class="found-item">
-          <div>Найдено:3</div>
+          <p>Найдено:3</p>
         </li>
         <li class="sort-item">
-          <div>Сортировка:</div>
+          <p>Сортировка:</p>
           <li>
             <a class="button sort-item-current" href="#">По цене</a>
           </li>
@@ -49,8 +91,12 @@
           </li>
 
           <li>
-            <a class="button sort-item-current" href="#"><img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="По возрастанию"></a>
-            <a class="button sort" href="#"><img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="По убыванию"></a>
+            <a class="button sort-item-current" href="#">
+              <img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+            </a>
+            <a class="button sort" href="#">
+              <img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+            </a>
           </li>
         </ul>
       </div>
@@ -73,11 +119,12 @@
             </ul>
             <li class="raiting">Рейтинг: 8,5</li>
             <li>
-              <img src="img/catalog/star.svg" width="18" height="17" alt="4 звезды из 5">
+              <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
             </li>
 
             <li class="result-item">
               <img src="img/catalog/desert_hotel.jpg" width="135" height="90" alt="Фото мотеля Desert">
+
             </li>
             <li>
               <p>Desert Quail Inn</p>
@@ -92,9 +139,9 @@
               </ul>
               <li class="raiting">Рейтинг: 8,9</li>
               <li>
-                <img src="img/catalog/star.svg" width="18" height="17" alt=" звезды из 5">
+                <img src="img/catalog/star.svg" width="18" height="17" alt="Рейтинг 3 звезды из 5">
               </li>
-            </li>
+          
             <li class="result-item">
               <img src="img/catalog/villas-diablo.jpg" width="135" height="90" alt="Фото аппартаментов Diablo">
             </li>
@@ -111,9 +158,8 @@
               </ul>
               <li class="raiting">Рейтинг: 9,2</li>
               <li>
-                <img src="img/catalog/star.svg" width="18" height="17" alt="2 звезды из 5">
+                <img src="img/catalog/star.svg" width="18" height="17" alt="Рейтинг 2 звезды из 5">
               </li>
-            </li>
           </ul>
         </section>
       </main>
@@ -122,17 +168,22 @@
         <div class="footer-social">
           <ul>
             <li>
-              <a class="social-button" href="https://twitter.com"><img src="img/catalog/twit.svg" width="17" height="15" alt="Twitter"> Твиттер</a>
+              <a class="social-button" href="https://twitter.com">
+                <img src="img/catalog/twit.svg" width="17" height="15" alt="Twitter">Твиттер</a>
             </li>
             <li>
-              <a class="social-button" href="https://www.facebook.com"><img src="img/catalog/fb-icon.svg" width="12" height="22" alt="Facebook"> Фейсбук</a>
+              <a class="social-button" href="https://www.facebook.com">
+                <img src="img/catalog/fb-icon.svg" width="12" height="22" alt="Facebook">Фейсбук</a>
             </li>
             <li>
-              <a class="social-button" href="https://www.youtube.com"><img src="img/catalog/youtube.svg" width="20" height="16" alt="Yoytube"> Ютуб</a>
+              <a class="social-button" href="https://www.youtube.com">
+                <img src="img/catalog/youtube.svg" width="20" height="16" alt="Yoytube">Ютуб</a>
             </li>
           </ul>
         </div>
-        <a class="button" href="https://htmlacademy.ru"><img src="img/catalog/logo_name_html.svg" width="115" height="41" alt="Ссылка на сайт HTML Academy"> Website by HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru">
+          <img src="img/catalog/logo_name_html.svg" width="115" height="41" alt="Ссылка на сайт HTML Academy">Website by HTML Academy
+        </a>
       </footer>
 </body>
     </html>

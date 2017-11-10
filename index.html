@@ -8,11 +8,11 @@
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
-				<img src="img/index-icon.png.png" height="70" width="138" alt="Логотип Седона">
+				<img src="img/index-icon.png" height="70" width="138" alt="Логотип Седона">
 			</a>
 			<ul class="site-navigation">
 				<li>
-					<a href="info.html">Информация</a>
+					<a class="information-current">Информация</a>
 				</li>
 				<li>
 					<a href="files.html">Фото и Видео</a>
@@ -26,7 +26,7 @@
 			</ul>
 		</nav>
 		<section>
-			<img src="img/logo_welcome.png" height="458" width="352" alt="Добро пожаловать в Седону">
+			<img src="img/logo_welcome.png" height="458" width="352" alt="Добро пожаловать в великолепную Седону">
 		</section>
 
 	</header>
@@ -46,7 +46,7 @@
 					</p>
 				</li>
 				<li class="photo-city">
-					<img src="img/house.jpg" height="401" width="800" alt="Фото города">
+					<img src="img/house.jpg" height="401" width="800" alt="Фото города на фоне гор">
 				</li>
 
 			</ul>
@@ -82,7 +82,7 @@
 					</p>
 				</li>
 				<li class="bridge">
-					<img src="img/devil-bridge.jpg" width="800" height="400" alt="Мост дьявола">
+					<img src="img/devil-bridge.jpg" width="800" height="400" alt="Фото моста дьявола">
 				</li>
 
 			</ul>
@@ -116,31 +116,56 @@
 
 		<section class="search-hotels">
 			<h2>Заинтерисовались?</h2>
-			<p>
+			<p class="hint-info">
 				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
 			<!--здесь будет форма-->
+			<form class="search" action="https://echo.htmlacademy.ru" method="post">
+				<h3>Поиск гостиницы в Седоне</h3>
+				<p>
+					<label for="date-search-in">Дата заезда:</label>
+					<input type="date" name="arrival-date" id="date-search-in"></p>
+				<p>
+					<label for="data-search-out">Дата выезда</label>
+					<input type="date" name="date-of-departures" id="data-search-out"></p>
+				<p>
+					<label for="adult-search">Взрослые:</label>
+					<button type="button"class="button-less" name="button-less">-</button>
+					<input type="number" name="quatity-of-adult" id="adult-search" min="0" max="15">
+					<button type="button"class="button-plus" name="button-plus">+</button>
+				</p>
+				<p>
+					<label for="child-search">Дети:</label>
+					<button type="button"class="button-less" name="button-less">-</button>
+					<input type="number" name="child-of-adult" id="child-search" min="0" max="15">
+					<button type="button"class="button-plus" name="button-plus">+</button>
+				</p>
+				<a href="catalog.html">Найти</a>
+			</form>
 		</section>
 		<section class="map">
-			<img src="img/map.jpg" width="1718" height="748" alt="Карта округа">
-		</section>
+			<img src="img/map.jpg" width="1718" height="748" alt="Карта округа"></section>
 	</main>
 	<footer class="main-footer">
 		<a class="button" href="https://visitsedona.com">#VisitSedona</a>
 		<div class="footer-social">
 			<ul>
 				<li>
-					<a class="social-button" href="https://twitter.com"><img src="img/twit.svg" width="17" height="15" alt="Twitter">Твиттер</a>
+					<a class="social-button" href="https://twitter.com">
+						<img src="img/twit.svg" width="17" height="15" alt="Twitter">Твиттер</a>
 				</li>
 				<li>
-					<a class="social-button" href="https://www.facebook.com"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">Фейсбук</a>
+					<a class="social-button" href="https://www.facebook.com">
+						<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">Фейсбук</a>
 				</li>
 				<li>
-					<a class="social-button" href="https://www.youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="Yoytube">Ютуб</a>
+					<a class="social-button" href="https://www.youtube.com">
+						<img src="img/youtube.svg" width="20" height="16" alt="Yoytube">Ютуб</a>
 				</li>
 			</ul>
 		</div>
-		<a class="button" href="https://htmlacademy.ru"><img src="img/logo_name_html.svg" width="115" height="41" alt="ссылка на сайт HTML Academy"> Website by HTML Academy</a>
+		<a class="button" href="https://htmlacademy.ru">
+			<img src="img/logo_name_html.svg" width="115" height="41" alt="ссылка на сайт HTML Academy">Website by HTML Academy</a>
 	</footer>
 </body>
 </html>
