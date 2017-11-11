@@ -75,7 +75,7 @@
 			<h1 class="visually-hidden">Мост сотворенный природой</h1>
 			<ul class="description-most-list">
 				<li class="description-most-item">
-					<h2>Там есть мост дьявола</h2>
+					<h2>Там есть<br> мост дьявола</h2>
 					<p>
 						<span class="number">-№2-</span>
 						Да, по нему можно пройти! если конечно вы осмелитесь
@@ -117,36 +117,39 @@
 		<section class="search-hotels">
 			<h2>Заинтерисовались?</h2>
 			<p class="hint-info">
-				Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+				Укажите предполагаемые даты поездки,<br> 
+				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
 			<!--здесь будет форма-->
 			<form class="search" action="https://echo.htmlacademy.ru" method="post">
-				<h3>Поиск гостиницы в Седоне</h3>
+				<button type="button">Поиск гостиницы в Седоне</button>
 				<p>
 					<label for="date-search-in">Дата заезда:</label>
 					<input type="text" name="arrival-date" id="date-search-in" placeholder="11 ноября 2017">
+					<button type="button" class="calendar-btn"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря" area-label="Иконка календаря для выбора даты заезда"></button>
 				</p>
 				<p>
 					<label for="data-search-out">Дата выезда</label>
 					<input type="text" name="date-of-departures" id="data-search-out" placeholder="8 марта 2017">
+					<button type="button" class="calendar-btn"><img src="img/calendar.svg" width="21" height="22" alt="Иконка календаря" area-label=:"Иконка календаря для выбора даты отъезда"></button>
 				</p>
 				<p>
 					<label for="adult-search">Взрослые:</label>
-					<button type="button"class="button-less" name="button-less">-</button>
-					<input type="number" name="quatity-of-adult" id="adult-search" min="0" max="15">
-					<button type="button"class="button-plus" name="button-plus">+</button>
+					<button type="button"class="button-less" name="button-less"><img src="img/-.png" alt="Кнопка уменшения количества взрослых" area-label="Кнопка уменшения количества взрослых"></button>
+					<input type="number" name="quatity-of-adult" id="adult-search" min="0" max="15" value="2">
+					<button type="button"class="button-plus" name="button-plus"><img src="img/+.png" alt="Кнопка увелечения количества взрослых" area-label="Кнопка увелечения количества взрослых"></button>
 				</p>
 				<p>
 					<label for="child-search">Дети:</label>
-					<button type="button"class="button-less" name="button-less">-</button>
-					<input type="number" name="child-of-adult" id="child-search" min="0" max="15">
-					<button type="button"class="button-plus" name="button-plus">+</button>
+					<button type="button"class="button-less" name="button-less"><img src="img/-.png" alt="Кнопка уменьшения количества детей" area-label="Кнопка уменьшения количества детей"></button>
+					<input type="number" name="child-of-adult" id="child-search" min="0" max="15" value="0">
+					<button type="button"class="button-plus" name="button-plus"><img src="img/+.png" alt="кнопка увелечения количества детей" area-label="кнопка увелечения количества детей"></button>
 				</p>
-				<a href="catalog.html">Найти</a>
+				<button type="submit">Найти</button>
 			</form>
 		</section>
 		<section class="map">
-			<img src="img/map.jpg" width="1718" height="748" alt="Карта округа"></section>
+			<img src="img/map.jpg" width="1718" height="748" alt="Карта округа" area-label="Карта Аризоны с отметкой города Седона"></section>
 	</main>
 	<footer class="main-footer">
 		<a class="button" href="https://visitsedona.com">#VisitSedona</a>
@@ -154,20 +157,20 @@
 			<ul>
 				<li>
 					<a class="social-button" href="https://twitter.com">
-						<img src="img/twit.svg" width="17" height="15" alt="Twitter">Твиттер</a>
+						<img src="img/twit.svg" width="17" height="15" alt="Twitter" area-label= "ссылка на сайт twitter"></a>
 				</li>
 				<li>
 					<a class="social-button" href="https://www.facebook.com">
-						<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook">Фейсбук</a>
+						<img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" area-label="ссылка на сайт Facebook"></a>
 				</li>
 				<li>
 					<a class="social-button" href="https://www.youtube.com">
-						<img src="img/youtube.svg" width="20" height="16" alt="Yoytube">Ютуб</a>
+						<img src="img/youtube.svg" width="20" height="16" alt="Yoytube" area-label="ссылка на сайт Youtube"></a>
 				</li>
 			</ul>
 		</div>
 		<a class="button" href="https://htmlacademy.ru">
-			<img src="img/logo_name_html.svg" width="115" height="41" alt="ссылка на сайт HTML Academy">Website by HTML Academy</a>
+			<img src="img/logo_name_html.svg" width="115" height="41" alt="ссылка на сайт HTML Academy" area-label="ссылка на сайт HTML Academy"></a>
 	</footer>
 </body>
 </html>
