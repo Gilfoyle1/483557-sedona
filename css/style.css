@@ -169,6 +169,10 @@ a {
 	background-color: #ffffff;
 }
 
+.button# {
+	color: #000000;
+}
+
 .button-submit {
 	font-style: 21px;
 	line-height: 26px;
@@ -179,24 +183,36 @@ a {
  .botton-submit:hover {
  	background-color: #669ec0;
  }
-
- .botton-submit:focus {
- 	background-color: #669ec0;
- }
-
  .botton-submit:active {
  	color: #94b9d2;
  	background-color: #5496bd;
  }
 
+.social-botton {
+	text-align: center;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+.social-button:hover,
+.social-button:focus {
+	color: #ffffff;
+	background-color: #669ec0;
+}
+
+.social-button:active {
+	color #88b6d1;
+	background-color: #5496bd;
+}
+
+.button-html {
+	color: #000000;
+}
 
 
 
 
 
-
-
-
+ 
 
 
 
