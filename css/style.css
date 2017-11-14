@@ -136,9 +136,9 @@ a {
 	line-height: 26px;
 	background-color: #766357;
 }
-/*цвет кнопки в покое не выставляется!*/
+/*цвет кнопки в покое выставляется!*/
 .button-search:hover {
-	background-color: #766357;
+	background-color: #604e43;
 }
 .button-search:focus {
 	background-color: #604e43;
@@ -180,15 +180,17 @@ a {
 	background-color: #81b3d2;
 }
 
- .botton-submit:hover {
+ .button-submit:hover {
  	background-color: #669ec0;
  }
- .botton-submit:active {
+
+
+ .button-submit:active {
  	color: #94b9d2;
  	background-color: #5496bd;
  }
 
-.social-botton {
+.social-button {
 	text-align: center;
 	color: #ffffff;
 	background-color: #81b3d2;
@@ -200,7 +202,7 @@ a {
 }
 
 .social-button:active {
-	color #88b6d1;
+	color: #88b6d1;
 	background-color: #5496bd;
 }
 
