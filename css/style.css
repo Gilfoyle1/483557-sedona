@@ -235,6 +235,7 @@ input {
 }
 
 .social {
+	fill: white;
 	background-color: #81b3d2;
 }
 
@@ -242,12 +243,14 @@ input {
 	background-color: #669ec0;
 }
 
-.social {
+.social:active {
 	fill: #88b6d1;
 	background-color: #5496bd;
 }
 /* не отображается логотип*/
 .html-logo {
+	width: 115px;
+	height: 41px;
 	fill: #000000;
 }
 
@@ -256,7 +259,11 @@ input {
 }
 
 .html-logo:active {
-	#c2c0c1;
+	fill: #c2c0c1;
+}
+
+.web-by {
+	font-weight: 400;
 }
 
 /*каталог*/
@@ -325,14 +332,28 @@ p label {
 	line-height: 26px;
 }
 
+.input-group input {
+	color: #ffffff;
+	border:2px solid #ffffff;
+	background-color: transparent;
+}
+
 .sort-item p {
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 400;
 }
-/* стрелки не работает*/
+
+a .arrows {
+	fill: #cacaca;
+}
+
 a:hover .arrows {
-	fill: white;
+	fill: black;
+}
+
+a:active .arrows {
+	fill: #81b3d2;
 }
 
 .sort-item-current {
