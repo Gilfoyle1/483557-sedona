@@ -6,7 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-</head>
+</head>+
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
@@ -29,7 +29,7 @@
 			</ul>
 		</nav>
 		<section class="logo-body">
-			<img src="img/logo_welcome.png" height="458" width="352" alt="Добро пожаловать в великолепную Седону">
+			<img src="img/logo-welcome.png" height="458" width="352" alt="Добро пожаловать в великолепную Седону">
 		</section>
 
 	</header>
@@ -47,11 +47,11 @@
 					<h2>Настоящий городок</h2>
 					<p>
 						<span class="number">— №1 —</span>
-						Седона — не атракцион для туристов, там течет своя жизнь
+						Седона — не аттракцион для туристов, там течет своя жизнь
 					</p>
 				</li>
 				<li class="photo-city">
-					<img src="img/house.jpg" height="401" width="800" alt="Фото города на фоне гор">
+					<img src="img/house-in-sedona.jpg" height="401" width="800" alt="Фото города на фоне гор">
 				</li>
 
 			</ul>
@@ -132,8 +132,8 @@
 				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
 				<div class="date-search">
 					<p>
-						<label for="date-search-in">Дата заезда:</label>
-						<input type="text" name="arrival-date" id="date-search-in" placeholder="11 ноября 2017">
+						<label class="form-label" for="date-search-in">Дата заезда:</label>
+						<input class="form-input" type="text" name="arrival-date" id="date-search-in" placeholder="11 ноября 2017">
 						<button type="button" class="calendar-btn" aria-label="Иконка календаря для выбора даты заезда">
 							<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -159,8 +159,8 @@
 						</button>
 					</p>
 					<p>
-						<label for="data-search-out">Дата выезда</label>
-						<input type="text" name="date-of-departures" id="data-search-out" placeholder="8 марта 2017">
+						<label class="form-label" for="data-search-out">Дата выезда:</label>
+						<input class="form-input" type="text" name="date-of-departures" id="data-search-out" placeholder="8 марта 2017">
 						<button type="button" class="calendar-btn" aria-label=:"Иконка календаря для выбора даты отъезда">
 							<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -187,28 +187,28 @@
 					</p>
 				</div>
 				<p>
-					<label for="adult-search">Взрослые:</label>
+					<label class="form-label" for="adult-search">Взрослые:</label>
 					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменшения количества взрослых">
-						<img src="img/-.png" alt="Кнопка уменшения количества взрослых"></button>
+						<img src="img/minus-for-the-button.png" alt="Кнопка уменшения количества взрослых"></button>
 					<input type="number" name="quatity-of-adult" id="adult-search" min="0" max="15" value="2">
 					<button type="button" class="button-plus" name="button-plus" aria-label="Кнопка увелечения количества взрослых">
-						<img src="img/+.png" alt="Кнопка увелечения количества взрослых"></button>
+						<img src="img/plus-for-the-button.png" alt="Кнопка увелечения количества взрослых"></button>
 				</p>
 				<p>
-					<label for="child-search">Дети:</label>
+					<label class="form-label" for="child-search">Дети:</label>
 					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменьшения количества детей">
-						<img src="img/-.png" alt="Кнопка уменьшения количества детей"></button>
+						<img src="img/minus-for-the-button.png" alt="Кнопка уменьшения количества детей"></button>
 					<input type="number" name="child-of-adult" id="child-search" min="0" max="15" value="0">
 					<button type="button" class="button-plus" name="button-plus" aria-label="кнопка увелечения количества детей">
-						<img src="img/+.png" alt="кнопка увелечения количества детей"></button>
+						<img src="img/plus-for-the-button.png" alt="кнопка увелечения количества детей"></button>
 				</p>
 				<button type="submit" class="button-submit">Найти</button>
 			</form>
 		</section>
 		<section class="map">
-			<img src="img/map.jpg" width="1718" height="748" alt="Карта Аризоны с отметкой города Седона"></section>
+			<img src="img/arizona-map.jpg" width="1718" height="748" alt="Карта Аризоны с отметкой города Седона"></section>
 	</main>
-	<footer class="main-footer"> <b>#VisitSedona</b>
+	<footer class="main-footer"> <b class="visit">#VisitSedona</b>
 		<div class="footer-social">
 			<ul>
 				<li>

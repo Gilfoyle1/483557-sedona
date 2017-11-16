@@ -34,30 +34,30 @@
       <h1 class="visually-hidden">Фильтры товара</h1>
       <fieldset class="infrastructure">
         <legend>Инфраструктура:</legend>
-        <p>
+        <p class="sorting">
           <input type="checkbox" name="pool" id="pool-filtres" checked>
           <label for="pool-filtres">Бассейн</label>
         </p>
-        <p>
+        <p class="sorting">
           <input type="checkbox" name="parking" id="parking-filtres">
           <label for="parking-filtres">Парковка</label>
         </p>
-        <p>
+        <p class="sorting">
           <input type="checkbox" name="wi-fi" id="wi-fi-filtres">
           <label for="wi-fi-filtres">Wi-fi</label>
         </p>
       </fieldset>
-      <fieldset class="type of accommodation">
+      <fieldset class="type-of-accommodation">
         <legend>Тип жилья:</legend>
-        <p>
+        <p class="sorting">
           <label for="type-hotel">Гостиница:</label>
           <input type="checkbox" name="hotel" id="type-hotel" checked>
         </p>
-        <p>
+        <p class="sorting">
           <label for="type-motel">Мотель:</label>
           <input type="checkbox" name="motel" id="type-motel" checked>
         </p>
-        <p>
+        <p class="sorting">
           <label for="type-appartment">Апартаменты:</label>
           <input type="checkbox" name="appartment" id="type-appartment" checked>
         </p>
@@ -83,14 +83,14 @@
             <a class="button sort-item-current" href="#">По цене</a>
           </li>
           <li>
-            <a class="button sort-item" href="#">По типу</a>
+            <a class="button-sort-item" href="#">По типу</a>
           </li>
           <li>
-            <a class="button sort-item" href="#">По рейтингу</a>
+            <a class="button-sort-item" href="#">По рейтингу</a>
           </li>
 
           <li>
-            <a class="button sort-item-current" href="#" aria-label="Сортировка результатов по возрастанию">
+            <a class="buttonsort-item-current" href="#" aria-label="Сортировка результатов по возрастанию">
               <svg  class="arrows" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" alt="По возрастанию">
                 <polygon points="5.5,0 0,10 11,10 "/>
@@ -110,12 +110,12 @@
         <ul class="results-list">
           <li class="result-item">
             <hr>
-            <img src="img/catalog/amaro_resort.jpg" width="135" height="90" alt="Фото гостиницы Amaro resort">
+            <img src="img/catalog/amaro-resort.jpg" width="135" height="90" alt="Фото гостиницы Amaro resort">
           </li>
           <li>
-            <a class="name" href="#">Amara resorts & spa</a>
+            <a class="name" href="#">Amara resort & spa</a>
             <ul>
-              <li class="price">Гостиница от 4000р.</li>
+              <li class="price">Гостиница от 4000 р.</li>
               <li>
                 <a class="button-more" href="#">Подробнее</a>
               </li>
@@ -125,21 +125,21 @@
             </ul>
             <li>
               <p class="stars" aria-label="4 звезды из 5">
-                <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
-                <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
-                <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
-                <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
+                <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
+                <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
+                <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
+                <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
               </p>
             </li>
             <li class="raiting">Рейтинг: 8,5</li>
             <hr>
             <li class="result-item">
-              <img src="img/catalog/desert_hotel.jpg" width="135" height="90" alt="Фото мотеля Desert">
+              <img src="img/catalog/desert-hotel.jpg" width="135" height="90" alt="Фото мотеля Desert">
             </li>
             <li>
               <a class="name" href="#">Desert Quail Inn</a>
               <ul>
-                <li class="price">Мотель от 3000р.</li>
+                <li class="price">Мотель от 3000 р.</li>
                 <li>
                   <a class="button-more" href="#">Подробнее</a>
                 </li>
@@ -149,9 +149,9 @@
               </ul>
               <li>
                 <p class="stars" aria-label="3 звезды из 5">
-                  <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
-                  <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
-                  <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
+                  <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
+                  <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
+                  <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
                 </p>
               </li>
               <li class="raiting">Рейтинг: 8,9</li>
@@ -162,7 +162,7 @@
               <li>
                 <a class="name" href="#">Villas at poco diablo</a>
                 <ul>
-                  <li class="price">Апартаменты от 2000р.</li>
+                  <li class="price">Апартаменты от 2000 р.</li>
                   <li>
                     <a class="button-more" href="#">Подробнее</a>
                   </li>
@@ -172,8 +172,8 @@
                 </ul>
                 <li>
                   <p class="stars" aria-label="Рейтинг 2 звезды из 5">
-                    <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 2 звезды из 5">
-                    <img src="img/catalog/star.svg" width="18" height="17" alt=" Рейтинг 2 звезды из 5">
+                    <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 2 звезды из 5">
+                    <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 2 звезды из 5">
                   </p>
                 </li>
                 <li class="raiting">Рейтинг: 9,2</li>
