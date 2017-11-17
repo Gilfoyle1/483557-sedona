@@ -14,8 +14,10 @@ body {
 
 .logo-body {
 	background-repeat: no-repeat;
-	background-image: url(../img/background-photo.jpg),
-	url(../img/shape-background.png);
+	background-image: url(../img/shape-background.png), 
+	url(../img/background-photo.jpg);
+	background-size: 100% 57px, cover;
+	background-position: bottom, center;
 }
 
 .visually-hidden { 
