@@ -1,23 +1,24 @@
+
+/*Общие стили*/
 body {
 	margin: 0;
 	padding: 0;
-
+	min-width: 1200px;
 	font-family: 'PT Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-
-	background-color: #ffffff;
+	background-color: #f2f2f2;
 }
 
-.logo-body {
-	background-repeat: no-repeat;
-	background-image: url(../img/shape-background.png), 
-	url(../img/background-photo.jpg);
-	background-size: 100% 57px, cover;
-	background-position: bottom, center;
+.plder-container {
+	position: relative;
+	margin: 0 auto;
+	position: relative;
+	background-color: #ffffff;
+
 }
 
 .visually-hidden { 
@@ -30,12 +31,45 @@ body {
 	clip: rect(0 0 0 0); 
 	overflow: hidden; 
 }
-/*не работает*/
-.feedback li {list-style: none;
-}
 
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.older-container li {list-style: none;
+}
+
+/*Шапка-навигация*/
+
+.logo-body {
+	position: relative;
+	display: flex;
+	min-height: 510px;
+	margin: 0;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-image: url(../img/shape-background.png), 
+	url(../img/background-photo.jpg);
+	background-size: 100% 57px, cover;
+	background-position: bottom, center;
+}
+
+.logo-body img {
+	margin-top: 75px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.main-header-logo {
+	position: absolute;
+	margin-bottom: -69px;
+	left: 50%;
+	z-index: 1;
 }
 
 .main-navigation {
@@ -46,20 +80,59 @@ a {
 	background-color: #ffffff;
 }
 
+.site-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 55px;
+	padding: 0;
+	margin: 0;
+	padding-right: 72px;
+	padding-left: 72px;
+}
+
 .site-navigation a:link {
 	color: #000000; 
 }
 .site-navigation a:visited {
   	color: #918279;
 }
-.site-navigation a:hover {
+.site-navigation a:hover, 
+.site-navigation a:focus {
   	color: #81b3d2; 
 }
 .site-navigation a:active {
-  	color: #b2b2b2;
+  	color: rgba(0, 0, 0, 0.3);
 }
-/*Как сделать цвет ссылки страницы,на которой находишься?*/
+
+.site-navigation li {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	min-width: 240px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+/*Основное содержание*/
+
+.reasons {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
 .cause {
+	width: 1200px;
 	text-align: center;
 	background-color: #ffffff;
 }
@@ -67,29 +140,49 @@ a {
 .cause h1{
 	font-size: 21px;
 	line-height: 26px;
+	width: 440px;
+	margin-top: 61px;
+	margin-bottom: 27px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .cause p{   
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 26px;
+	margin-bottom: 50px;
+	margin: 0;
+	padding: 0;
 }
 
 .description-city {
 	background-color: #81b3d2;
 	text-align: center;
 	color: #ffffff;
+	display: flex;
+	flex-wrap: wrap;
+	width: 265px;
 }
 
 .description-city h2{
 	font-size: 21px;
 	line-height: 21px;
+	width: 155px;
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 48px;
+	margin-bottom: 23px;
 }
 
 .description-city p{
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
+	font-weight: 400;
+	width: 305px;
+	margin-bottom: 60px;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .advice {
@@ -103,10 +196,52 @@ a {
 	font-weight: 400;
 } 
 
+.advice-list-motel {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+}
+
+.advice-item-motel, 
+.advice-food-item, 
+.advice-souvenirs-item {
+	position: relative;
+	padding-left: 0;
+	margin: 0;
+	margin-bottom: 23px;
+	margin-top: 160px;
+}
+
+.description-city-item, 
+.description-bridge-item, 
+.description-item {
+	flex-grow: 1;
+	width: 400px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.description-ciry-item img, 
+.description-bgidge-item img {
+	flex-grow: 2;
+}
+
 .description-bridge {
+	width: 265px;
 	background-color: #81b3d2;
 	text-align: center;
 	color: #ffffff;
+}
+
+.paragraph {
+	width: 265px;
+}
+
+.description-bridge-item {
+	flex-wrap: wrap-reverse;
 }
 
 .description-bridge-item h2 {
@@ -114,15 +249,30 @@ a {
 	line-height: 21px;
 }
 
-.description-bridge-item p{
+.number {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0px;
+}
+
+.description-bridge-item p {
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
+	font-weight: 400;
+	width: 305px;
+	margin-bottom: 60px;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .description-gray {
 	text-align: center;
 	background-color: #eeeeee;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .description-item h2{
@@ -133,7 +283,11 @@ a {
 .description-item p {
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
+	font-weight: 400;
+	width: 305px;
+	margin-bottom: 60px;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .search-hotels {
