@@ -86,7 +86,8 @@
           <p>Найдено:3</p>
         </li>
         <li class="sort-item">
-          <p>Сортировка:</p>
+          <p>Сортировка:</p></li>
+          <div class="sort-item-block">
           <li>
             <a class="button sort-item-current" href="#">По цене</a>
           </li>
@@ -96,15 +97,16 @@
           <li>
             <a class="button-sort-item" href="#">По рейтингу</a>
           </li>
+        </div>
 
-          <li>
-            <a class="buttonsort-item-current" href="#" aria-label="Сортировка результатов по возрастанию">
+          <li class="arrows-buttons">
+            <a class="button-sort-item-current" href="#" aria-label="Сортировка результатов по возрастанию">
               <svg  class="arrows" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" alt="По возрастанию">
                 <polygon points="5.5,0 0,10 11,10 "/>
               </svg>
             </a>
-            <a class="button sort" href="#" aria-label="Сортировка результатов по убыванию">
+            <a class="button-sort" href="#" aria-label="Сортировка результатов по убыванию">
               <svg class="arrows" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" alt="По убыванию">
                 <polyline points="5.5,10 0,0 11,0 "/>
@@ -116,17 +118,19 @@
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <ul class="results-list">
+          <li class="common-item>">
           <li class="result-item">
-            <hr>
             <img src="img/catalog/amaro-resort.jpg" width="135" height="90" alt="Фото гостиницы Amaro resort">
           </li>
-          <li>
+          <li class="hotel-info">
             <a class="name" href="#">Amara resort & spa</a>
             <ul>
+              <li class="hotel-type">
               <li class="price">Гостиница от 4000 р.</li>
               <li>
                 <a class="button-more" href="#">Подробнее</a>
               </li>
+            </li>
               <li>
                 <button type=button class="button-book">Забронировать</button>
               </li>
@@ -140,17 +144,21 @@
               </p>
             </li>
             <li class="raiting">Рейтинг: 8,5</li>
-            <hr>
+          </li>
+        </li>
+            <li class="common-item">
             <li class="result-item">
               <img src="img/catalog/desert-hotel.jpg" width="135" height="90" alt="Фото мотеля Desert">
             </li>
-            <li>
+            <li class="hotel-info">
               <a class="name" href="#">Desert Quail Inn</a>
               <ul>
+                <li class="hotel-type">
                 <li class="price">Мотель от 3000 р.</li>
                 <li>
                   <a class="button-more" href="#">Подробнее</a>
                 </li>
+              </li>
                 <li>
                   <button type="button" class="button-book">Забронировать</button>
                 </li>
@@ -163,17 +171,20 @@
                 </p>
               </li>
               <li class="raiting">Рейтинг: 8,9</li>
-              <hr>
+            </li>
+              <li class="common-item">
               <li class="result-item">
                 <img src="img/catalog/villas-diablo.jpg" width="135" height="90" alt="Фото аппартаментов Diablo">
               </li>
-              <li>
+              <li class="hotel-info">
                 <a class="name" href="#">Villas at poco diablo</a>
                 <ul>
+                  <li class="hotel-type">
                   <li class="price">Апартаменты от 2000 р.</li>
                   <li>
                     <a class="button-more" href="#">Подробнее</a>
                   </li>
+                </li>
                   <li>
                     <button type="button" class="button-book">Забронировать</button>
                   </li>
@@ -185,7 +196,8 @@
                   </p>
                 </li>
                 <li class="raiting">Рейтинг: 9,2</li>
-                <hr></ul>
+              </li>
+              </ul>
             </section>
           </main>
           <footer class="main-footer"> <b class="visit">#VisitSedona</b>
