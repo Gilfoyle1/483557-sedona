@@ -53,14 +53,13 @@
 					</p>
 				</li>
 				<li class="photo-city">
-					<img src="img/house-in-sedona.jpg" height="401" width="800" alt="Фото города на фоне гор">
 				</li>
 
 			</ul>
 		</section>
 		<section class="advice">
 			<h1 class="visually-hidden">Советы бывалых</h1>
-			<ul class="avice-list-motel">
+			<ul class="advice-list-motel">
 				<li class="advice-item-motel">
 					<img src="img/icon-house.svg" width="75" height="72" alt="Иконка домика ">
 					<h2>Жилье</h2>
@@ -75,7 +74,7 @@
 				<li class="advice-souvenirs-item">
 					<img src="img/icon-gift.svg" width="64" height="76" alt="Иконка подарка">
 					<h2>Сувениры</h2>
-					<p>Не только китайского, но и местного производства!</p>
+					<p class="paragraph">Не только китайского, но и местного производства!</p>
 				</li>
 			</ul>
 		</section>
@@ -92,7 +91,6 @@
 					</p>
 				</li>
 				<li class="bridge">
-					<img src="img/devil-bridge.jpg" width="800" height="400" alt="Фото моста дьявола">
 				</li>
 
 			</ul>
@@ -125,18 +123,19 @@
 	</div>
 
 		<section class="search-hotels">
+			<div>
 			<h2>Заинтерисовались?</h2>
-			<p class="hint-info">
-				Укажите предполагаемые даты поездки,
+			<p class="hint-info">Укажите предполагаемые даты поездки,
 				<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<!--здесь будет форма-->
+			</div>
+			<div class="conatainer-form">
 			<form class="search" action="https://echo.htmlacademy.ru" method="post">
 				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
 				<div class="date-search">
-					<p>
+					<p class="date-in">
 						<label class="form-label" for="date-search-in">Дата заезда:</label>
 						<input class="form-input" type="text" name="arrival-date" id="date-search-in" placeholder="11 ноября 2017">
-						<button type="button" class="calendar-btn" aria-label="Иконка календаря для выбора даты заезда">
+						<button type="button" class="calendar-btn-1" aria-label="Иконка календаря для выбора даты заезда">
 							<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 								<g id="calendar_1_">
@@ -160,10 +159,10 @@
 							</svg>
 						</button>
 					</p>
-					<p>
+					<p class="date-out">
 						<label class="form-label" for="data-search-out">Дата выезда:</label>
 						<input class="form-input" type="text" name="date-of-departures" id="data-search-out" placeholder="8 марта 2017">
-						<button type="button" class="calendar-btn" aria-label=:"Иконка календаря для выбора даты отъезда">
+						<button type="button" class="calendar-btn-2" aria-label=:"Иконка календаря для выбора даты отъезда">
 							<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 								<g id="calendar_1_">
@@ -187,35 +186,32 @@
 							</svg>
 						</button>
 					</p>
-				</div>
-				<p>
+				<p class="block-quantity-adult">
 					<label class="form-label" for="adult-search">Взрослые:</label>
-					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменшения количества взрослых">
-						<img src="img/minus-for-the-button.png" alt="Кнопка уменшения количества взрослых"></button>
+					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменшения количества взрослых">-</button>
 					<input type="number" name="quatity-of-adult" id="adult-search" min="0" max="15" value="2">
-					<button type="button" class="button-plus" name="button-plus" aria-label="Кнопка увелечения количества взрослых">
-						<img src="img/plus-for-the-button.png" alt="Кнопка увелечения количества взрослых"></button>
+					<button type="button" class="button-plus" name="button-plus" aria-label="Кнопка увелечения количества взрослых">+</button>
 				</p>
-				<p>
+				<p class="block-quantity-child">
 					<label class="form-label" for="child-search">Дети:</label>
-					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменьшения количества детей">
-						<img src="img/minus-for-the-button.png" alt="Кнопка уменьшения количества детей"></button>
+					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменьшения количества детей">-</button>
 					<input type="number" name="child-of-adult" id="child-search" min="0" max="15" value="0">
-					<button type="button" class="button-plus" name="button-plus" aria-label="кнопка увелечения количества детей">
-						<img src="img/plus-for-the-button.png" alt="кнопка увелечения количества детей"></button>
+					<button type="button" class="button-plus" name="button-plus" aria-label="кнопка увелечения количества детей">+</button>
 				</p>
+			</div>
 				<button type="submit" class="button-submit">Найти</button>
 			</form>
+		</div>
 		</section>
 		<section class="map">
 			<img src="img/arizona-map.jpg" width="1718" height="748" alt="Карта Аризоны с отметкой города Седона"></section>
 	</main>
 	<footer class="main-footer"> <b class="visit">#VisitSedona</b>
 		<div class="footer-social">
-			<ul>
+			<ul class="social-links">
 				<li>
-					<a class="social-button" href="https://twitter.com" aria-label= "ссылка на сайт twitter">
-						Твиттер
+					<a class="social-button" href="https://twitter.com" aria-label= "ссылка на сайт twitter"><span class="visually-hidden">
+						Твиттер</span>
 						<svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
 							<image overflow="visible" width="17" height="15" xlink:href="t.png" ></image>
@@ -234,7 +230,7 @@
 				</li>
 				<li>
 					<a class="social-button" href="https://www.facebook.com" aria-label="ссылка на сайт Facebook">
-						Фейсбук
+						<span class="visually-hidden">Фейсбук</span>
 						<svg class="social" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
 							<path d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
@@ -243,7 +239,7 @@
 				</li>
 				<li>
 					<a class="social-button" href="https://www.youtube.com" aria-label="ссылка на сайт Youtube">
-						Ютуб
+						<span class="visually-hidden">Ютуб</span>
 						<svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
 							<image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" ></image>
@@ -254,6 +250,7 @@
 				</li>
 			</ul>
 		</div>
+		<p class="copyright">
 		<span class="web-by">WEBSITE by</span>
 		<a class="button-html" href="https://htmlacademy.ru" aria-label="ссылка на сайт HTML Academy">
 			<svg class="html-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
@@ -272,6 +269,7 @@
 				<path d="M370.53,323.31l-0.16,0-15.28,1.6v28L370.37,362l15.28-9.09v-28Zm13.12,28.45-13.28,7.9-13.28-7.9V340.28l13.22,7.87,0,1.43-9.07-5.4v1.38l9.11,5.47,0,1.46-9.1-5.42v1.38l9.11,5.47h0l9.19-5.5v-1.39h0v-4.52l4.1-2.45v11.67Zm0-13.16L380,340.74h0l-1.68,1-8-4.76v1.38l6.84,4.07-0.06,0-0.15.09-1,.57-5.64-3.36v1.38l4.45,2.65-1.05.7,0,0-3.36-2v1.38l2.21,1.3-2.25,1.35-13.16-7.82,13.17-7.92h0Zm0-1.39-13.35-7.87h0l-13.2,7.86v-10.5l13.28-1.39,13.28,1.39v10.51Z" transform="translate(-355.09 -323.29)"/>
 			</svg>
 		</a>
+	</p>
 	</footer>
 </div>
 </body>

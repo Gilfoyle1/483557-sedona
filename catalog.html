@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="feedback">
+<body>
+  <div class="older-container">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -30,10 +31,11 @@
     </nav>
   </header>
   <main class="container">
+    <section class="filters-block">
     <form class="filtres" method="get" action="https://echo.htmlacademy.ru">
       <h1 class="visually-hidden">Фильтры товара</h1>
       <fieldset class="infrastructure">
-        <legend>Инфраструктура:</legend>
+        <legend class="filtres-tittle">Инфраструктура:</legend>
         <p class="sorting">
           <input type="checkbox" name="pool" id="pool-filtres" checked>
           <label for="pool-filtres">Бассейн</label>
@@ -48,7 +50,7 @@
         </p>
       </fieldset>
       <fieldset class="type-of-accommodation">
-        <legend>Тип жилья:</legend>
+        <legend class="filtres-title">Тип жилья:</legend>
         <p class="sorting">
           <label for="type-hotel">Гостиница:</label>
           <input type="checkbox" name="hotel" id="type-hotel" checked>
@@ -65,13 +67,19 @@
       <fieldset class="price-per-day">
         <legend>Стоимость в сутки(р):</legend>
         <p class="input-group">
-          <input type="text" name="" value="от 0" disabled>
-          <input type="text" name="" value="до 3000" disabled>
+          <label class="min-price">от <input type="text" name="min-price" value="0" disabled></label>
+          <label class="max-price">до <input type="text" name="max-price" value="3000" disabled></label>
         </p>
-        <div class="range-slider"></div>
-      </fieldset>
+        <div class="range-slider">
+          <div class="gray-stripe">
+                  <div class="white-stripe"></div>
+                </div>
+                <div class="slider slider-min"></div>
+                <div class="slider slider-max"></div>
+        </div>
       <button type="submit" class="filtres-button">Показать</button>
     </form>
+  </section>
     <div class="sort">
       <ul class="sort-list">
         <li class="found-item">
@@ -180,12 +188,12 @@
                 <hr></ul>
             </section>
           </main>
-          <footer class="main-footer"> <b>#VisitSedona</b>
+          <footer class="main-footer"> <b class="visit">#VisitSedona</b>
     <div class="footer-social">
-      <ul>
+      <ul class="social-links">
         <li>
-          <a class="social-button" href="https://twitter.com" aria-label= "ссылка на сайт twitter">
-            Твиттер
+          <a class="social-button" href="https://twitter.com" aria-label= "ссылка на сайт twitter"><span class="visually-hidden">
+            Твиттер</span>
             <svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
               <image overflow="visible" width="17" height="15" xlink:href="t.png" ></image>
@@ -204,7 +212,7 @@
         </li>
         <li>
           <a class="social-button" href="https://www.facebook.com" aria-label="ссылка на сайт Facebook">
-            Фейсбук
+            <span class="visually-hidden">Фейсбук</span>
             <svg class="social" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
               <path d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
@@ -213,7 +221,7 @@
         </li>
         <li>
           <a class="social-button" href="https://www.youtube.com" aria-label="ссылка на сайт Youtube">
-            Ютуб
+            <span class="visually-hidden">Ютуб</span>
             <svg class="social" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
               <image overflow="visible" enable-background="new    " width="20" height="16" xlink:href="youtube.png" ></image>
@@ -224,6 +232,7 @@
         </li>
       </ul>
     </div>
+    <p class="copyright">
     <span class="web-by">WEBSITE by</span>
     <a class="button-html" href="https://htmlacademy.ru" aria-label="ссылка на сайт HTML Academy">
       <svg class="html-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
@@ -242,6 +251,8 @@
         <path d="M370.53,323.31l-0.16,0-15.28,1.6v28L370.37,362l15.28-9.09v-28Zm13.12,28.45-13.28,7.9-13.28-7.9V340.28l13.22,7.87,0,1.43-9.07-5.4v1.38l9.11,5.47,0,1.46-9.1-5.42v1.38l9.11,5.47h0l9.19-5.5v-1.39h0v-4.52l4.1-2.45v11.67Zm0-13.16L380,340.74h0l-1.68,1-8-4.76v1.38l6.84,4.07-0.06,0-0.15.09-1,.57-5.64-3.36v1.38l4.45,2.65-1.05.7,0,0-3.36-2v1.38l2.21,1.3-2.25,1.35-13.16-7.82,13.17-7.92h0Zm0-1.39-13.35-7.87h0l-13.2,7.86v-10.5l13.28-1.39,13.28,1.39v10.51Z" transform="translate(-355.09 -323.29)"/>
       </svg>
     </a>
+  </p>
   </footer>
+</div>
 </body>
 </html>
