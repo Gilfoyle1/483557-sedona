@@ -47,8 +47,8 @@
 			<ul class="description-city-list">
 				<li class="description-city-item">
 					<h2>Настоящий городок</h2>
+					<span class="number">— №1 —</span>
 					<p class="paragraph"> 
-						<span class="number">— №1 —</span>
 						Седона — не аттракцион для туристов, там течет своя жизнь
 					</p>
 				</li>
@@ -74,11 +74,11 @@
 				<li class="advice-souvenirs-item">
 					<img src="img/icon-gift.svg" width="64" height="76" alt="Иконка подарка">
 					<h2>Сувениры</h2>
-					<p class="paragraph">Не только китайского, но и местного производства!</p>
+					<p>Не только китайского, но и местного производства!</p>
 				</li>
 			</ul>
 		</section>
-		<section class="description-bridge">
+		<section class="description-bridge conversely">
 			<h1 class="visually-hidden">Мост сотворенный природой</h1>
 			<ul class="description-bridge-list">
 				<li class="description-bridge-item">
@@ -121,16 +121,15 @@
 			</ul>
 		</section>
 	</div>
-
-		<section class="search-hotels">
-			<div>
+			<div class="search-hotels">
 			<h2>Заинтерисовались?</h2>
-			<p class="hint-info">Укажите предполагаемые даты поездки,
-				<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<p class="hint-info">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
 			</div>
-			<div class="conatainer-form">
+			<div class="container-form">
+				<img src="img/arizona-map.jpg" width="1200" height="593" alt="Карта Аризоны с отметкой города Седона">
+			<section class="section-form">
 			<form class="search" action="https://echo.htmlacademy.ru" method="post">
-				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
 				<div class="date-search">
 					<p class="date-in">
 						<label class="form-label" for="date-search-in">Дата заезда:</label>
@@ -188,7 +187,8 @@
 					</p>
 				<p class="block-quantity-adult">
 					<label class="form-label" for="adult-search">Взрослые:</label>
-					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменшения количества взрослых">-</button>
+					<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменшения количества взрослых">
+			-</button>
 					<input type="number" name="quatity-of-adult" id="adult-search" min="0" max="15" value="2">
 					<button type="button" class="button-plus" name="button-plus" aria-label="Кнопка увелечения количества взрослых">+</button>
 				</p>
@@ -201,10 +201,8 @@
 			</div>
 				<button type="submit" class="button-submit">Найти</button>
 			</form>
-		</div>
 		</section>
-		<section class="map">
-			<img src="img/arizona-map.jpg" width="1718" height="748" alt="Карта Аризоны с отметкой города Седона"></section>
+		</div>
 	</main>
 	<footer class="main-footer"> <b class="visit">#VisitSedona</b>
 		<div class="footer-social">

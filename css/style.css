@@ -17,9 +17,7 @@ body {
 	width: 1200px;
 	position: relative;
 	margin: 0 auto;
-	position: relative;
 	background-color: #ffffff;
-
 }
 
 .visually-hidden { 
@@ -71,7 +69,7 @@ a {
 
 
 }
-
+/*навигация*/
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
@@ -124,7 +122,7 @@ a {
 }
 
 /*Основное содержание*/
-
+/*причина*/
 .reasons {
 	padding: 0;
 	margin: 0;
@@ -140,10 +138,10 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	width: 440px;
-	margin-top: 61px;
-	margin-bottom: 27px;
 	margin: 0 auto;
 	padding: 0;
+	margin-top: 61px;
+	margin-bottom: 27px;
 }
 
 .cause p{   
@@ -151,14 +149,19 @@ a {
 	font-size: 14px;
 	line-height: 26px;
 	margin-bottom: 50px;
-	margin: 0;
-	padding: 0;
 }
 
 .description-city {
 	background-color: #81b3d2;
 	text-align: center;
 	color: #ffffff;
+}
+
+.description-city-item {
+	width: 33%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
 .photo-city {
@@ -191,8 +194,9 @@ a {
 	margin: 0 auto;
 	margin-bottom: 60px;
 	padding: 0;
-	margin: 0 auto;
 }
+
+/* жилье еда сувениры*/
 
 .advice {
 	text-align: center;
@@ -205,6 +209,15 @@ a {
 	font-weight: 400;
 } 
 
+.number {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
 .advice-list-motel {
 	display: flex;
 	justify-content: space-between;
@@ -213,45 +226,57 @@ a {
 	margin: 0;
 }
 
-.advice-list-motel li {
-	width: 33.33%;
-}
-
-.advice-souvenirs-item .paragraph {
+.advice-souvenirs-item {
 	display: inline-block;
 }
 
 .advice-item-motel, 
 .advice-food-item, 
 .advice-souvenirs-item {
-	position: relative;
-	padding-left: 0;
-	margin: 0;
-	margin-bottom: 23px;
-	margin-top: 160px;
-}
-
-.description-city-item {
-width: 33%;
-
-}
-
-.description-city-item, 
-.description-bridge-item,  {
 	padding: 0;
 	margin: 0;
 	text-align: center;
+	width: 33.33%;
 }
 
-.description-ciry-item img, 
+.advice-item-motel h2, 
+.advice-food-item h2, 
+.advice-souvenirs-item h2 {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 22px;
+	margin-top: 160px;
+}
+
+.advice-item-motel p, 
+.advice-food-item p, 
+.advice-souvenirs-item p {
+	width: 285px;
+	padding: 0;
+	margin: 0 auto;
+	margin-bottom: 84px;
+}
+
+.description-city-item img, 
 .description-bgidge-item img {
 	flex-grow: 2;
 }
+
+/*мост дьявола*/
 
 .description-bridge {
 	background-color: #81b3d2;
 	text-align: center;
 	color: #ffffff;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+
+}
+
+.conversely {
+	flex-wrap: wrap-reverse;
 }
 
 .bridge {
@@ -262,71 +287,63 @@ width: 33%;
 }
 
 .paragraph {
-	width: 265px;
+	width: 305px;
 	margin: 0 auto;
 	padding: 0;
-	margin-bottom: 83px;
+	margin-bottom: 60px;
 }
 
 .description-bridge-list {
+	display: flex;
 	padding: 0;
-	margin: 0;
 }
 
 .description-bridge-item {
-	flex-wrap: wrap-reverse;
 	width: 33%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
 .description-bridge-item h2 {
 	font-size: 21px;
 	line-height: 21px;
+	width: 155px;
+	padding: 0;
+	margin: 0 auto;
+	margin-top: 48px;
+	margin-bottom: 23px;
 }
 
-.number {
-	display: inline-block;
-	vertical-align: middle;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 0px;
-}
 
 .description-bridge-item p {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	width: 305px;
+	margin: 0 auto;
 	margin-bottom: 60px;
 	padding: 0;
-	margin: 0 auto;
 }
 
+/*пункты 3,4,5*/
+
 .description-gray {
-	text-align: center;
-	background-color: #eeeeee;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	width: 265px;
+	background-color: #eeeeee;
 }
 
-.description-item h2{
-	font-size: 21px;
-	line-height: 21px;
-}
-
-.description-item p {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
-	width: 305px;
-	margin-bottom: 60px;
-	padding: 0;
-	margin: 0 auto;
-}
+/*поиск отеля*/
 
 .search-hotels {
-	text-align: center;
-	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .search-hotels div{
@@ -344,21 +361,57 @@ width: 33%;
 	margin: 0;
 	margin-bottom: 24px;
 	margin-top: 50px;
+	text-align: center;
 }
 
 .search-hotels p {
 	font-style: 14px;
 	line-height: 24px;
 	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 46px;
+	text-align: center;
 }
 
-.conatainer-form {
-	position: absolute;
-	left: 316px;
-	height: 480px;
-	padding: 55px;
-	margin: 0;
+.button-search {
+	font-family: 'PT Sans', Arial, sans-serif; 
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 26px;
+	background-color: #766357;
+	font-weight: 700;
+	display: inline-block;
+	padding: 30px 140px;
+	vertical-align: middle;
+	border: none;
+
+}
+.button-search:hover, 
+.button-search:focus {
+	background-color: #604e43;
+}
+
+.button-search:active {
+	color: #928a85;
+	background-color: #503e33;
+}
+
+.container-form {
+	position: relative;
+}
+
+.section-form {
+	line-height: 26px;
 	background-color: #ffffff;
+  	position: absolute;
+  	top: 0;
+  	left: 315px;
+  	width: 458px;
+  	height: 285px;
+  	margin: 0;
+  	padding: 55px;
 }
 
 .date-search {
@@ -373,7 +426,8 @@ width: 33%;
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
-	padding-top: 57px;
+	width: 460px;
+	padding: 0;
 	margin: 0;
 	margin-bottom: 31px;
 }
@@ -405,29 +459,7 @@ width: 33%;
 	margin: 0;
 	margin-bottom: 29px;
 	padding: 0;
-}
-
-.button-search {
-	font-family: 'PT Sans', Arial, sans-serif; 
-	color: #ffffff;
-	font-size: 21px;
-	line-height: 26px;
-	background-color: #766357;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: inline-block;
-	padding: 30px 140px;
-	vertical-align: middle;
-
-}
-.button-search:hover, 
-.button-search:focus {
-	background-color: #604e43;
-}
-
-.button-search:active {
-	color: #928a85;
-	background-color: #503e33;
+	width: 460px;
 }
 
 .search input {
@@ -465,7 +497,7 @@ width: 33%;
 	background-color: transparent;
 	margin: 0;
 	padding: 0;
-	top: 65px;
+	top: 20pxpx;
 	right: 8px;
 }
 .calendar-btn-2 {
@@ -490,6 +522,7 @@ width: 33%;
 .calendar:active {
 	fill: #81b3d2;
 }
+
 .block-quantity-adult {
 	display: flex;
 	align-items: center;
@@ -515,7 +548,7 @@ width: 33%;
 
 .block-quantity-child input, 
 .block-quantity-adult input {
-	height: 32px;
+	height: 38px;
 	width: 34px;
 	text-align: center;
 }
@@ -586,13 +619,12 @@ width: 33%;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
-	width: 400px;
-
+	width: 33.33%;
 }
 
 .footer-social {
 	text-align: center;
-	width: 400px;
+	width: 33.33%;
 }
 
 .social-links {
@@ -645,7 +677,7 @@ width: 33%;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	width: 400px;
+	width: 33.33%;
 }
 
 .html-logo {
