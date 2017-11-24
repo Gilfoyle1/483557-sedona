@@ -712,12 +712,8 @@ a {
 
 /*фильтр*/
 
-.filtres {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	margin: 0;
-	padding: 0;
+
+.filters-block {
 	color: #ffffff;
 	background-size: 1200px 218px;
 	background-color: #81b3d2;
@@ -725,11 +721,30 @@ a {
 	padding-right: 72px;
 	background-repeat: no-repeat;
 	background-image: url("../img/background-photo.jpg")
-
 }
 
-.filtres fieldset {
+.filters-form {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+}
+
+.check-list {
+	padding: 0;
+	margin: 0;
+}
+
+.filters-form fieldset {
 	border: none;
+}
+
+.filters-title {
+	margin: 0;
+	margin-bottom: 24px;
+	padding: 0;
+	text-align: left;
 }
 
 .infrastructure, 
@@ -747,10 +762,12 @@ a {
 }
 
 .sorting {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	margin-left: 40px;
 	margin-bottom: 24px;
+	cursor: pointer;
 }
 
 .sorting label {
@@ -761,30 +778,49 @@ a {
 }
 
 .sorting label::before {
-  content:"";
-  position: absolute;
-  top: -4px;
-  left: -41px;
-  width: 23px;
-  height: 23px;
-  background-image: url("../img/catalog/checkbox-off.svg");
+  	content:"";
+  	position: absolute;
+  	top: -4px;
+  	left: -41px;
+  	width: 23px;
+ 	height: 23px;
+ 	background-image: url("../img/catalog/checkbox-off.svg");
 }
 
-/*чекбоксы не работают*/
+.sorting input[type=checkbox] + label::before {
+  	content: "";
 
-input[type="checkbox"]:checked ~ .sorting label::before {
-  width: 27px;
-  background-image: url("../img/catalog/checkbox-on.svg");
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 25px;
+  	height: 25px;
+	background-image: url("../img/catalog/checkbox-off.svg");
+  	background-position: 0 0;
+  	background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:disabled ~ .sorting label::before {
-  background-image: url("../img/catalog/checkbox-off-disayble.svg");
+.sorting input[type=checkbox]:checked + label::before {
+  	content: "";
+
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 25px;
+ 	height: 25px;
+	background-image: url("../img/catalog/checkbox-on.svg");
+  	background-position: 0 0;
+  	background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:checked:disabled ~ .sorting label::before {
-  width: 27px;
-  background-image: url("../img/catalog/checkbox-on-disayble.svg");
+.sorting input[type=checkbox]:focus:checked + label::before {
+  	outline: 1px solid #81b3d2;
 }
+
+.sorting input[type=checkbox]:focus + label::before {
+  	outline: 1px solid #81b3d2;
+}
+
 
 .price-per-day {
 	width: 319px;
@@ -793,7 +829,7 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 
 }
 
-.filtres legend {
+.filters-title {
 	font-size: 16px;
 	line-height: 21px;
 }
@@ -825,6 +861,11 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
+}
+
+.input-group input {
+	color: #ffffff;
+	background-color: transparent;
 }
 
 .input-group .min-price, 
@@ -884,13 +925,6 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	left: 70%;
 }
 
-.filtres-title {
-	margin: 0;
-	margin-bottom: 24px;
-	padding: 0;
-	text-align: left;
-}
-
 .filtres-button {
 	border: 2px solid white;
 	color: white;
@@ -914,19 +948,22 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	line-height: 26px;
 }
 
-.input-group input {
-	color: #ffffff;
-	border:2px solid #ffffff;
-	background-color: transparent;
-}
+/*результат поиска*/
 
 .sort {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0;
 	padding-left: 72px;
 	padding-right: 72px;
-	margin: 0;
+}
+
+.found-item p {
+	margin-right: 50px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	line-height: 26px;
 }
 
 .sort-item p {
@@ -934,12 +971,6 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	line-height: 18px;
 	font-weight: 400;
 	margin-right: 40px;
-}
-
-.found-item p {
-	margin-right: 50px;
-	margin-bottom: 30px;
-	margin-top: 30px;
 }
 
 .sort-item-block {
@@ -969,6 +1000,10 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	fill: #81b3d2;
 }
 
+.arrows .current {
+  	fill: #81b3d2;
+}
+
 .sort-item-current {
 	color: #81b3d2;
 	font-size: 12px;
@@ -992,6 +1027,7 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	color: #000000;
 	border-bottom: none;
 }
+ /*отели*/
 
 .results-list {
 	margin: 0;
@@ -1019,13 +1055,28 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	margin-right: 72px;
 }
 
+.result-item {
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	width: 140px;
+}
+
 .hotel-info {
+	margin-top: 26px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.hotel-info-block {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 260px;
-	margin: 0;
 	padding: 0;
+	margin: 0;
+	width: 260px;
 }
 
 .name {
@@ -1034,12 +1085,6 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	color: #000000;
 	margin: 0;
 	padding: 0;
-}
-
-.price {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: 400;
 }
 
 .name:hover, 
@@ -1051,12 +1096,34 @@ input[type="checkbox"]:checked:disabled ~ .sorting label::before {
 	color: rgba(0, 0, 0, 0.5);
 }
 
+.category {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+}
+
 .hotel-type {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
+}
+
+.price-book {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.price {
+	font-weight: 400px;
+}
+
+.stars-raiting {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .raiting {

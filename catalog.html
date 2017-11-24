@@ -32,10 +32,11 @@
   </header>
   <main class="container">
     <section class="filters-block">
-    <form class="filtres" method="get" action="https://echo.htmlacademy.ru">
+    <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
       <h1 class="visually-hidden">Фильтры товара</h1>
       <fieldset class="infrastructure">
-        <legend class="filtres-tittle">Инфраструктура:</legend>
+        <legend class="filters-tittle">Инфраструктура:</legend>
+        <div class="check-list">
         <p class="sorting">
           <input type="checkbox" name="pool" id="pool-filtres" checked>
           <label for="pool-filtres">Бассейн</label>
@@ -48,9 +49,11 @@
           <input type="checkbox" name="wi-fi" id="wi-fi-filtres">
           <label for="wi-fi-filtres">Wi-fi</label>
         </p>
+      </div>
       </fieldset>
       <fieldset class="type-of-accommodation">
-        <legend class="filtres-title">Тип жилья:</legend>
+        <legend class="filters-title">Тип жилья:</legend>
+        <div class="check-list">
         <p class="sorting">
           <label for="type-hotel">Гостиница:</label>
           <input type="checkbox" name="hotel" id="type-hotel" checked>
@@ -63,6 +66,7 @@
           <label for="type-appartment">Апартаменты:</label>
           <input type="checkbox" name="appartment" id="type-appartment" checked>
         </p>
+      </div>
       </fieldset>
       <fieldset class="price-per-day">
         <legend>Стоимость в сутки(р):</legend>
@@ -100,8 +104,8 @@
         </div>
 
           <li class="arrows-buttons">
-            <a class="button-sort-item-current" href="#" aria-label="Сортировка результатов по возрастанию">
-              <svg  class="arrows" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <a class="sort-item-current" href="#" aria-label="Сортировка результатов по возрастанию">
+              <svg  class="arrows current" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve" alt="По возрастанию">
                 <polygon points="5.5,0 0,10 11,10 "/>
               </svg>
@@ -123,27 +127,30 @@
             <img src="img/catalog/amaro-resort.jpg" width="135" height="90" alt="Фото гостиницы Amaro resort">
           </li>
           <li class="hotel-info">
+            <div class="hotel-info-block">
             <a class="name" href="#">Amara resort & spa</a>
             <ul>
               <li class="hotel-type">
-              <li class="price">Гостиница от 4000 р.</li>
+              <li class="category">Гостиница</li>
               <li>
                 <a class="button-more" href="#">Подробнее</a>
               </li>
             </li>
-              <li>
+              <li class="price-book">
+                <span class="price">от 4000 р.</span>
                 <button type=button class="button-book">Забронировать</button>
               </li>
             </ul>
-            <li>
+          </div>
+            <li class="stars-raiting">
               <p class="stars" aria-label="4 звезды из 5">
                 <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
                 <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
                 <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
                 <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 4 звезды из 5">
               </p>
-            </li>
-            <li class="raiting">Рейтинг: 8,5</li>
+            <span class="raiting">Рейтинг: 8,5</span>
+          </li>
           </li>
         </li>
             <li class="common-item">
@@ -151,56 +158,62 @@
               <img src="img/catalog/desert-hotel.jpg" width="135" height="90" alt="Фото мотеля Desert">
             </li>
             <li class="hotel-info">
+              <div class="hotel-info-block">
               <a class="name" href="#">Desert Quail Inn</a>
               <ul>
                 <li class="hotel-type">
-                <li class="price">Мотель от 3000 р.</li>
+                <li class="category">Мотель</li>
                 <li>
                   <a class="button-more" href="#">Подробнее</a>
                 </li>
               </li>
-                <li>
+                <li class="price-book">
+                  <span class="price">от 3000 р.</span>
                   <button type="button" class="button-book">Забронировать</button>
                 </li>
               </ul>
-              <li>
+            </div>
+              <li class="stars-raiting">
                 <p class="stars" aria-label="3 звезды из 5">
                   <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
                   <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
                   <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 3 звезды из 5">
                 </p>
-              </li>
-              <li class="raiting">Рейтинг: 8,9</li>
+              <span class="raiting">Рейтинг: 8,9</span>
+            </li>
             </li>
               <li class="common-item">
               <li class="result-item">
                 <img src="img/catalog/villas-diablo.jpg" width="135" height="90" alt="Фото аппартаментов Diablo">
               </li>
               <li class="hotel-info">
+                <div class="hotel-info-block">
                 <a class="name" href="#">Villas at poco diablo</a>
                 <ul>
                   <li class="hotel-type">
-                  <li class="price">Апартаменты от 2000 р.</li>
+                  <li class="category">Апартаменты</li>
                   <li>
                     <a class="button-more" href="#">Подробнее</a>
                   </li>
                 </li>
-                  <li>
+                  <li class="price-book">
+                    <span class="price">от 2000 р.</span>
                     <button type="button" class="button-book">Забронировать</button>
                   </li>
                 </ul>
-                <li>
+              </div>
+                <li class="stars-raiting">
                   <p class="stars" aria-label="Рейтинг 2 звезды из 5">
                     <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 2 звезды из 5">
                     <img src="img/catalog/star-icon.svg" width="18" height="17" alt=" Рейтинг 2 звезды из 5">
                   </p>
-                </li>
-                <li class="raiting">Рейтинг: 9,2</li>
+                <span class="raiting">Рейтинг: 9,2</span>
+              </li>
               </li>
               </ul>
             </section>
           </main>
-          <footer class="main-footer"> <b class="visit">#VisitSedona</b>
+          <footer class="main-footer"><b class="visit">#VisitSedona</b>
     <div class="footer-social">
       <ul class="social-links">
         <li>
