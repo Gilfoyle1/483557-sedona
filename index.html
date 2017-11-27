@@ -5,14 +5,14 @@
 	<title>HTML Academy: Седона</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+	<link rel="stylesheet" href="css/style.css"></head>
 <body>
 	<div class="older-container">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
-					<img src="img/index-icon.png" height="70" width="138" alt="Логотип Седона"></a>
+					<img src="img/index-icon.png" height="70" width="138" alt="Логотип Седона">
+				</a>
 				<ul class="site-navigation">
 					<li>
 						<a class="information-current">Информация</a>
@@ -24,7 +24,7 @@
 						<a href="map.html">Карта штата</a>
 					</li>
 					<li>
-						<a href="hotels.html">Гостиницы</a>
+						<a href="catalog.html">Гостиницы</a>
 					</li>
 				</ul>
 			</nav>
@@ -36,7 +36,9 @@
 		<main class="container">
 			<div class="reasons">
 				<div class="cause">
-					<h1>Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
+					<h1>
+						Седона — небольшой городок в Аризоне, заслуживающий большего!
+					</h1>
 					<p>
 						Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!
 					</p>
@@ -50,7 +52,6 @@
 							<p class="paragraph">Седона — не аттракцион для туристов, там течет своя жизнь</p>
 						</li>
 						<li class="photo-city"></li>
-
 					</ul>
 				</section>
 				<section class="advice">
@@ -77,16 +78,12 @@
 				<section class="description-bridge conversely">
 					<h1 class="visually-hidden">Мост сотворенный природой</h1>
 					<ul class="description-bridge-list">
+						<li class="bridge"></li>
 						<li class="description-bridge-item">
-							<h2>
-								Там есть
-								<br>мост дьявола</h2>
-
+							<h2>Там есть<br>мост дьявола</h2>
 							<span class="number">— №2 —</span>
 							<p class="paragraph">Да, по нему можно пройти! если конечно вы осмелитесь</p>
 						</li>
-						<li class="bridge"></li>
-
 					</ul>
 				</section>
 				<section class="description-gray">
@@ -113,19 +110,20 @@
 				</section>
 			</div>
 			<div class="search-hotels">
-				<h2>Заинтерисовались?</h2>
+				<h2>Заинтересовались?</h2>
 				<p class="hint-info">
-					Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					Укажите предполагаемые даты поездки,
+					<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
 			</div>
 			<div class="container-form">
-				<img src="img/arizona-map.jpg" width="1200" height="593" alt="Карта Аризоны с отметкой города Седона">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104783.44475383566!2d-111.84085635911798!3d34.89035859426655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1511775673248" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
 				<section class="section-form">
 					<form class="search" action="https://echo.htmlacademy.ru" method="post">
 						<div class="date-search">
 							<p class="date-in">
 								<label class="form-label" for="date-search-in">Дата заезда:</label>
-								<input class="form-input" type="text" name="arrival-date" id="date-search-in" placeholder="11 ноября 2017">
+								<input class="form-input" type="text" name="arrival-date" id="date-search-in" placeholder="24 апреля 2017">
 								<button type="button" class="calendar-btn-1" aria-label="Иконка календаря для выбора даты заезда">
 									<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -152,7 +150,7 @@
 							</p>
 							<p class="date-out">
 								<label class="form-label" for="data-search-out">Дата выезда:</label>
-								<input class="form-input" type="text" name="date-of-departures" id="data-search-out" placeholder="8 марта 2017">
+								<input class="form-input" type="text" name="date-of-departures" id="data-search-out" placeholder="4 июля 2017">
 								<button type="button" class="calendar-btn-2" aria-label=:"Иконка календаря для выбора даты отъезда">
 									<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
@@ -195,31 +193,32 @@
 				</section>
 			</div>
 		</main>
-		<footer class="main-footer footer-transparent"> <b class="visit">#VisitSedona</b>
+		<footer class="main-footer footer-transparent">
+			<b class="visit">#VisitSedona</b>
 			<div class="footer-social">
 				<ul class="social-links">
 					<li>
 						<a class="social-button" href="https://twitter.com" aria-label= "ссылка на сайт twitter">
 							<span class="visually-hidden">Твиттер</span>
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
-              </svg>
+								<path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a class="social-button" href="https://www.facebook.com" aria-label="ссылка на сайт Facebook">
 							<span class="visually-hidden">Фейсбук</span>
 							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
-              </svg>
+								<path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+							</svg>
 						</a>
 					</li>
 					<li>
 						<a class="social-button" href="https://www.youtube.com" aria-label="ссылка на сайт Youtube">
 							<span class="visually-hidden">Ютуб</span>
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-                <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
-              </svg>
+								<path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+							</svg>
 						</a>
 					</li>
 				</ul>
