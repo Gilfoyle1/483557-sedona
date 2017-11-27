@@ -805,7 +805,6 @@ span.web-by {
 	padding-right: 72px;
 	background-repeat: no-repeat;
 	background-image: url("../img/catalog/filter-background.jpg")
-	min-height: 218px;
 }
 
 .filters-form {
@@ -1079,30 +1078,38 @@ input:checked+label::before {
 	padding: 0;
 	margin: 0;
 	margin-right: -25px;
+	outline: 0;
 }
 
-a.sort-up-current {
-   margin-right: 10px;
-   
-   
+button.sort-up-current {
+   	background-color: #ffffff;
+   	border: none;
+   	position: relative;
+   	margin-right: 2px; 
+   	fill: #cacaca;
 }
 
-.arrows {
-	fill: #cacaca;
+button.sort-down {
+	background-color: #ffffff;
+	border: none;
+	fill: #81b3d2;
+	position: relative;
 }
 
-.arrows:hover, 
-.arrows:focus {
+button.sort-up-current:hover, 
+button.sort-up-current:focus, 
+button.sort-down:hover, 
+button.sort-down:focus {
 	fill:#000000;
 }
 
-.arrows:active {
+button.sort-up-current:active, 
+button.sort-up-current:active, 
+button.sort-down:active, 
+button.sort-down:active {
 	fill: #81b3d2;
 }
 
-.arrows .current {
-  	fill: #81b3d2;
-}
 
 .sort-item-current {
 	color: #81b3d2;
@@ -1150,6 +1157,7 @@ a.sort-up-current {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	max-height: 152px
 }
 
 .hotel-photo {
@@ -1251,7 +1259,6 @@ p.stars {
     font-weight: 400;
     padding: 3px 14px;
     vertical-align: middle;
-    margin-top: 42px;
     color: #b1b1b1;
 }
 
