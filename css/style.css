@@ -56,11 +56,12 @@ img {
 	min-height: 510px;
 	margin: 0;
 	padding: 0;
+	background-color: #dceaf3;
 	background-repeat: no-repeat;
 	background-image: url(../img/shape-background.png), 
 	url(../img/background-photo.jpg);
-	background-size: 100% 57px, cover;
-	background-position: bottom, center;
+	background-size: 100% 57px, 100%;
+	background-position: bottom, 50% -54px;
 }
 
 .logo-body img {
@@ -799,7 +800,7 @@ span.web-by {
 	justify-content: space-between;
 	align-items: flex-start;
 	color: #ffffff;
-	background-position: top;
+	background-position: 50% 15%;
 	background-color: #3a6182;
 	padding-left: 72px;
 	padding-right: 72px;
