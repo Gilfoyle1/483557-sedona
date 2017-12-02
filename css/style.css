@@ -489,7 +489,7 @@ ul.description-list {
 }
 
 .search-hotels p {
-	font-style: 14px;
+	font-size: 14px;
 	line-height: 24px;
 	font-weight: normal;
 	margin: 0;
@@ -628,8 +628,9 @@ ul.description-list {
 }
 
 .search-form label{
-	font-style: 14px;
+	font-size: 14px;
 	line-height: 26px;
+	flex-grow: 1;
 }
 
 .form-input::-webkit-input-placeholder {
