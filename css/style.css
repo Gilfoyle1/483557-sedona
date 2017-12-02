@@ -696,16 +696,28 @@ ul.description-list {
 }
 
 .common-quantity {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .block-quantity-adult,
 .block-quantity-child {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-bottom: 54px;
 	margin-top: -1px;
 }
@@ -725,7 +737,8 @@ ul.description-list {
 
 .block-quantity-child input, 
 .block-quantity-adult input {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 38px;
 	height: 38px;
 	padding-right: 12px;
@@ -734,7 +747,8 @@ ul.description-list {
 
 .button-less, 
 .button-plus {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	width: 38px;
 	height: 38px;
 	line-height: 26px;
