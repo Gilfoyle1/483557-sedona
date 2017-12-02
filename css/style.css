@@ -117,18 +117,30 @@ img {
   	padding: 10px 0;
 }
 
+.site-navigation li:first-child {
+	width: 183px;
+}
+
 .site-navigation li:nth-of-type(2) {
-  	margin-right: 90px;
+  	margin-right: 88px;
+    padding-left: 6px;
+}
+
+.site-navigation li:nth-child(3) {
+	padding-left: 33px;
 }
 
 .site-navigation li:first-child,
 .site-navigation li:nth-child(2) {
   	text-align: left;
+  	margin-top: -2px;
 }
 
 .site-navigation li:last-child,
 .site-navigation li:nth-child(3) {
   	text-align: right;
+  	margin-left: -22px;
+    margin-top: -3px;
 }
 
 .site-navigation a:link {
@@ -173,10 +185,10 @@ img {
 	line-height: 26px;
 	width: 440px;
     font-weight: 700;
-    margin-top: 62px;
+    margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 }
 
 .cause p{   
@@ -254,6 +266,7 @@ img {
 	margin: 0;
 	margin-bottom: 20px;
 	font-weight: 400;
+	margin-left: 2px;
 }
 
 .advice-list-motel {
@@ -304,7 +317,8 @@ img {
 	position: relative;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 23px;
+	margin-top: 4px;
 }
 
 .advice-item-motel p, 
@@ -339,7 +353,7 @@ img {
 }
 
 .bridge {
-	width: 66%;
+	width: 67%;
 	background-image: url("../img/devil-bridge.jpg");
 	background-position: center;
 	background-size: cover;
@@ -377,6 +391,7 @@ img {
 	margin: 0 auto;
 	margin-top: 48px;
 	margin-bottom: 23px;
+	margin-left: 120px;
 }
 
 
@@ -386,8 +401,9 @@ img {
 	font-weight: 400;
 	width: 305px;
 	margin: 0 auto;
-	margin-bottom: 60px;
+	margin-bottom: 62px;
 	padding: 0;
+	margin-left: 46px;
 }
 
 
@@ -494,6 +510,7 @@ ul.description-list {
 	padding: 30px 140px;
 	vertical-align: middle;
 	border: none;
+	margin-left: 3px;
 
 }
 .button-search:hover, 
@@ -516,11 +533,17 @@ ul.description-list {
 	background-color: #ffffff;
   	position: absolute;
   	top: 0;
-  	left: 315px;
+  	left: 318px;
   	width: 458px;
   	height: 285px;
   	margin: 0;
   	padding: 55px;
+}
+
+.form-hide {
+	-webkit-transform: translateX(-3000px);
+	    -ms-transform: translateX(-3000px);
+	        transform: translateX(-3000px);
 }
 
 .date-search {
@@ -588,23 +611,23 @@ ul.description-list {
 	width: 460px;
 }
 
-.search input {
+.search-form input {
 	border: 2px solid #f2f2f2;
 	background-color: #f2f2f2;
 }
 
-.search input:hover {
+.search-form input:hover {
 	background-color: #ebebeb;
 	border: 2px solid #ebebeb;
 }
 
-.search input:focus {
+.search-form input:focus {
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 	outline: none;
 }
 
-.search label{
+.search-form label{
 	font-style: 14px;
 	line-height: 26px;
 }
@@ -641,13 +664,13 @@ ul.description-list {
 	text-transform: uppercase;
 }
 .calendar-btn-1 {
-	position: absolute;
-	border: none;
-	background-color: transparent;
-	margin: 0;
-	padding: 0;
-	top: 20pxpx;
-	right: 8px;
+	    position: absolute;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    top: 8px;
+    right: 10px;
 }
 .calendar-btn-2 {
 	position: absolute;
@@ -656,7 +679,7 @@ ul.description-list {
 	margin: 0;
 	padding: 0;
 	top: 8px;
-	right: 8px;
+	right: 10px;
 }
 
 .calendar {
@@ -776,20 +799,29 @@ ul.description-list {
 
  /*подвал*/
 
+.position-footer {
+    position: relative;
+    margin: 0 auto;
+}
 
  .main-footer {
  	display: -webkit-box;
  	display: -ms-flexbox;
  	display: flex;
- 	margin: 0;
- 	height: 120px;
- 	-ms-flex-pack: distribute;
- 	    justify-content: space-around;
- 	-ms-flex-wrap: wrap;
- 	    flex-wrap: wrap;
- 	-webkit-box-align: center;
- 	    -ms-flex-align: center;
- 	        align-items: center;
+    position: absolute;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1200px;
+    min-width: 1200px;
+    height: 120px;
+    top: -125px;
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
  }
 
 /*прозрачный фон не работает! Точнее работае, но как футер задрать на интерактивную карту?*/
@@ -798,38 +830,57 @@ ul.description-list {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.inner-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 1200px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .visit {
 	font-size: 21px;
 	line-height: 26px;
-	text-align: center;
-	width: 33.33%;
+    margin-left: 17px;
+    margin-right: 5px;
 }
 
 .footer-social {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-   	width: 33.33%;
+   	position: relative;
+    padding: 0;
+    width: 150px;
+    margin: 0 0;
+    left: 20px;
 }
 
 .social-links {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	padding: 0;
-	margin: 0 auto;
-	width: 150px;
+	position: relative;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 150px;
+    margin: 0 0;
 }
 
 .social-button {
@@ -848,8 +899,9 @@ ul.description-list {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	height: 48px;
-	width: 46px;
+	width: 46px;     
 }
+
 .social-button:hover,
 .social-button:focus {
 	color: #ffffff;
@@ -885,13 +937,19 @@ div.copyright {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 33.33%;
+    position: relative;
+    width: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    left: 16px;
 }
 
 .html-logo {
 	width: 115px;
 	height: 41px;
 	fill: #000000;
+	margin-top: 3px;
 }
 
 .html-logo:hover,
@@ -908,7 +966,6 @@ span.web-by {
 	line-height: 21px;
 	font-weight: 400;
     width: 80px;
-    margin-left: 9px;
 }
 
 
@@ -972,7 +1029,7 @@ span.web-by {
   	        flex-direction: column;
   	padding: 0;
   	margin: 0;
-  	margin-top: 29px;
+  	margin-top: 25px;
   	margin-bottom: 9px;
   	margin-right: 120px;
   	border: none;
@@ -1001,7 +1058,7 @@ span.web-by {
 .sorting {
 	margin: 0;
   	padding: 0;
-  	margin-bottom: 12px;
+  	margin-bottom: 14px;
   	padding-left: 21px;
 }
 
@@ -1030,7 +1087,7 @@ span.web-by {
     margin-left: -17px;
     margin-top: 3px;
     margin-bottom: -3px;
-    margin-right: 17px;
+    margin-right: 13px;
     cursor: pointer;
     background-image: url("../img/catalog/checkbox-off.svg");
     fill: #ffffff;
@@ -1049,7 +1106,7 @@ input:disabled+label::before {
 
 input:checked+label::before {
     width: 27px;
-    margin-right: 14px;
+    margin-right: 9px;
     background-image: url("../img/catalog/checkbox-on.svg");
     background-repeat: no-repeat;
 }
@@ -1066,6 +1123,7 @@ input:checked+label::before {
   	font-size: 16px;
   	line-height: 21px;
   	margin-bottom: 10px;
+  	margin-left: 4px;
 }
 
 .input-group {
@@ -1078,16 +1136,16 @@ input:checked+label::before {
 }
 
 .input-group::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 2px;
-  top: 50%;
-  height: 22px;
-  background: #ffffff;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  	content: "";
+  	position: absolute;
+  	left: 50%;
+  	width: 2px;
+  	top: 50%;
+  	height: 22px;
+  	background: #ffffff;
+  	-webkit-transform: translate(-50%, -50%);
+  	    -ms-transform: translate(-50%, -50%);
+  	        transform: translate(-50%, -50%);
 }
 
 .input-group label {
@@ -1174,10 +1232,11 @@ input:checked+label::before {
 	text-transform: uppercase;
 	display: inline-block;
 	margin-left: 87px;
-	padding: 6px 30px;
+	padding: 7px 30px;
 	vertical-align: middle;
 	cursor: pointer;
 	width: 138px;
+	margin-top: -1px;
 }
 
 .filtres-button:hover,
@@ -1208,7 +1267,7 @@ input:checked+label::before {
 
 .sort h2 {
 	margin-right: 50px;
- 	margin-top: 30px;
+ 	margin-top: 31px;
   	margin-bottom: 30px;
   	font-size: 21px;
   	line-height: 26px;
@@ -1219,6 +1278,7 @@ input:checked+label::before {
 	margin-right: 40px;
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 6px;
 }
 
 .sort-list {
@@ -1228,17 +1288,17 @@ input:checked+label::before {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 238px;
+    width: 230px;
     margin-right: auto;
     padding: 0;
+    margin-top: 20px;
 }
 
 .arrows-buttons {
-	width: 60px;
 	padding: 0;
 	margin: 0;
-	margin-right: -25px;
 	outline: 0;
+	margin-top: 4px;
 }
 
 button.sort-up-current {
@@ -1254,6 +1314,7 @@ button.sort-down {
 	border: none;
 	fill: #81b3d2;
 	position: relative;
+	padding: 0;
 }
 
 button.sort-up-current:hover, 
@@ -1373,7 +1434,7 @@ li.hotel-info-block {
 .category {
 	width: 100px;
     padding: 0;
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 0;
     margin-right: 15px;
     text-align: left;
@@ -1382,7 +1443,7 @@ li.hotel-info-block {
 .price {
 	width: 100px;
     padding: 0;
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 0;
     margin-right: 15px;
     text-align: left;
@@ -1401,7 +1462,7 @@ li.hotel-info-block {
             justify-content: space-between;
     padding: 0;
     margin: 0 2px 0 0;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .price-book {
@@ -1415,8 +1476,8 @@ li.hotel-info-block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 30px;
-    margin-left: 5px;
+    margin-bottom: 25px;
+
 }
 
 .stars-raiting {
@@ -1431,7 +1492,7 @@ li.hotel-info-block {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	width: 120px;
-	margin-left: 515px;
+	margin-left: 500px;
 	margin-bottom: 30px;
 }
 
@@ -1439,6 +1500,7 @@ p.stars {
 	margin-top: 30px;
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
+	margin-right: 1px;
 }
 
 .raiting {
@@ -1446,19 +1508,27 @@ p.stars {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    padding: 3px 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     vertical-align: middle;
     color: #b1b1b1;
+    text-align: center;
+    margin-left: 10px;
 }
 
 .button-more {
 	display: inline-block;
 	margin: 0;
-	padding: 4px 16px;
+	padding: 3px 16px;
 	vertical-align: middle;
 	color: #ffffff;
 	background-color: #81b3d2;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+  	font-size: 14px;
+    line-height: 21px;
+    max-height: 28px;
+    margin-right: 5px;
 }
 
 .button-more:hover {
@@ -1473,7 +1543,7 @@ p.stars {
 .button-book {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 4px 16px;
+	padding: 3px 16px;
 	border: none;
 	color: #ffffff;
 	font-size: 14px;
@@ -1482,7 +1552,9 @@ p.stars {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-family: 'PT Sans', Arial, sans-serif;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	max-height: 28px;
 }
 
 .button-book:hover {
@@ -1493,18 +1565,3 @@ p.stars {
 	color: #928a85;
 	background-color: #503e33;
 }
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-б
