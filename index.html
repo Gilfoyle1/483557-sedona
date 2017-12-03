@@ -118,7 +118,8 @@
 				<button type="button" class="button-search">Поиск гостиницы в Седоне</button>
 			</div>
 			<div class="container-form">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104783.44475383566!2d-111.84085635911798!3d34.89035859426655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1511775673248" width="1200" height="594" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104783.44475383566!2d-111.84085635911798!3d34.89035859426655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1511775673248" width="1200" height="594" style="border:0" allowfullscreen></iframe>
+				<h1  class="visually-hidden">Форма поиска отеля</h1>
 				<section class="section-form">
 					<form class="search-form search-form-show" action="https://echo.htmlacademy.ru" method="post">
 						<div class="date-search">
@@ -126,9 +127,9 @@
 								<label class="form-label" for="date-search-in">Дата заезда:</label>
 								<input class="form-input arrival" type="text" name="arrival-date" id="date-search-in" placeholder="24 апреля 2017">
 								<button type="button" class="calendar-btn-1" aria-label="Иконка календаря для выбора даты заезда">
-									<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									<svg class="calendar" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
-										<g id="calendar_1_">
+										<g id="calendar_2_">
 											<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
 		c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
 		c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
@@ -152,8 +153,8 @@
 							<p class="date-out">
 								<label class="form-label" for="data-search-out">Дата выезда:</label>
 								<input class="form-input departure" type="text" name="date-of-departures" id="data-search-out" placeholder="4 июля 2017">
-								<button type="button" class="calendar-btn-2" aria-label=:"Иконка календаря для выбора даты отъезда">
-									<svg class="calendar" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								<button type="button" class="calendar-btn-2">
+									<svg class="calendar" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
 										<g id="calendar_1_">
 											<path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -180,17 +181,18 @@
 							<p class="block-quantity-adult">
 								<label class="form-label" for="adult-search">Взрослые:</label>
 								<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменшения количества взрослых">-</button>
-								<input type="text" name="quatity-of-adult" id="adult-search" min="0" max="15" value="2">
+								<input type="text" name="quatity-of-adult" id="adult-search" value="2">
 								<button type="button" class="button-plus" name="button-plus" aria-label="Кнопка увелечения количества взрослых">+</button>
 							</p>
 							<p class="block-quantity-child">
 								<label class="form-label" for="child-search">Дети:</label>
 								<button type="button" class="button-less" name="button-less" aria-label="Кнопка уменьшения количества детей">-</button>
-								<input type="text" name="child-of-adult" id="child-search" min="0" max="15" value="0">
+								<input type="text" name="child-of-adult" id="child-search" value="0">
 								<button type="button" class="button-plus" name="button-plus" aria-label="кнопка увелечения количества детей">+</button>
 							</p>
 						</div>
 						<button type="submit" class="button-submit">Найти</button>
+					</div>
 					</form>
 				</section>
 			</div>
@@ -228,7 +230,7 @@
 				<div class="copyright">
 					<span class="web-by">WEBSITE by</span>
 					<a class="button-html" href="https://htmlacademy.ru" aria-label="ссылка на сайт HTML Academy">
-						<svg class="html-logo" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
+						<svg class="html-logo"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
 							<title>logo_name</title>
 							<path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)"/>
 							<path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)"/>
@@ -245,9 +247,9 @@
 						</svg>
 					</a>
 				</div>
-			</div>
 		</footer>
 	</div>
+</div>
 	<script src="js/script-mini.js"></script>
 </body>
 </html>
