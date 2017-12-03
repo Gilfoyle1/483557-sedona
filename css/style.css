@@ -528,6 +528,10 @@ ul.description-list {
 	background-image: url("../img/arizona-map.jpg");
 }
 
+.container-form iframe {
+	display: block;
+}
+
 .section-form {
 	line-height: 26px;
 	background-color: #ffffff;
@@ -818,7 +822,7 @@ ul.description-list {
     max-width: 1200px;
     min-width: 1200px;
     height: 120px;
-    top: -125px;
+    top: -120px;
     background-color: rgba(255, 255, 255, 0.8);
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -828,7 +832,6 @@ ul.description-list {
     margin: 0 auto;
  }
 
-/*прозрачный фон не работает! Точнее работае, но как футер задрать на интерактивную карту?*/
  .footer-transparent {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.8);
@@ -855,6 +858,7 @@ ul.description-list {
 	line-height: 26px;
     margin-left: 17px;
     margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .footer-social {
