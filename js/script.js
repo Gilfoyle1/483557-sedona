@@ -3,6 +3,6 @@
 
 	form.classList.add("form-hide");
 
-	searchButton.addEventListener("click", function(){
-	form.classList.toggle("form-hide");
-});
+	searchButton.addEventListener("click", function() {
+	    form.classList.toggle("form-hide");
+	});
