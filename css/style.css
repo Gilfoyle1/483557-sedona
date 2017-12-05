@@ -53,14 +53,14 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	min-height: 510px;
+	min-height: 508px;
 	margin: 0;
 	padding: 0;
 	background-color: #dceaf3;
 	background-repeat: no-repeat;
 	background-image: url("../img/shape-background.png"), url("../img/background-photo.jpg");
 	background-size: 100% 57px, 100%;
-	background-position: bottom, 50% -54px;
+	background-position: bottom, 50% -56px;
 }
 
 .logo-body img {
@@ -113,7 +113,7 @@ img {
 	margin: 0;
 	padding-right: 6%;
 	padding-left: 6%;
-	margin-top: -79px;
+	margin-top: -78px;
 }
 
 .site-navigation li {
@@ -181,7 +181,7 @@ img {
 	width: 1200px;
 	text-align: center;
 	background-color: #ffffff;
-	margin-top: 59px;
+	margin-top: 60px;
 }
 
 .cause h1 {
@@ -199,13 +199,14 @@ img {
 	font-size: 14px;
 	line-height: 26px;
 	margin-bottom: 50px;
-	padding-top: 3px;
+	padding-top: 4px;
 }
 
 .description-city {
 	background-color: #81b3d2;
 	text-align: center;
 	color: #ffffff;
+	min-height: 260px;
 }
 
 .description-city-item {
@@ -255,6 +256,7 @@ img {
 .advice {
 	text-align: center;
 	background-color: #ffffff;
+	margin-top: -3px;
 }
 
 .advice p {
@@ -284,22 +286,23 @@ img {
 	flex-wrap: wrap;
 	padding: 0;
 	margin: 0;
-	max-height: 329px;
+	min-height: 329px;
 }
 
 .advice-item-motel img {
-	margin-top: 59px;
+	margin-top: 60px;
 	margin-bottom: 20px;
 }
 
 .advice-food-item img {
-	margin-top: 60px;
-	margin-bottom: 23px;
+	margin-top: 61px;
+	margin-bottom: 21px;
+	margin-right: 4px;
 }
 
 .advice-souvenirs-item img {
-	margin-top: 55px;
-	margin-bottom: 21px;
+	margin-top: 57px;
+	margin-bottom: 19px;
 }
 
 .advice-item-motel, 
@@ -345,6 +348,7 @@ img {
 	color: #ffffff;
 	padding: 0;
 	margin: 0;
+	margin-top: -2px;
 }
 
 .conversely {
@@ -586,11 +590,11 @@ ul.description-list {
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 	border: none;
-	width: 331px;
+	width: 292px;
 	height: 34px;
 	margin: 0;
 	padding: 0;
-	padding-left: 12px;
+	padding-left: 10px;
 }
 
 .date-out {
@@ -617,7 +621,7 @@ ul.description-list {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
-	padding-right: 2px;
+	padding-right: 41px;
 }
 
 .search-form input:hover {
@@ -1046,6 +1050,7 @@ span.web-by {
 
 .hotel {
 	margin-left: -2px;
+	margin-bottom: 19px;
 }
 
 .sorting {
@@ -1082,7 +1087,7 @@ span.web-by {
 	margin-left: -17px;
 	margin-top: 3px;
 	margin-bottom: -3px;
-	margin-right: 13px;
+	margin-right: 14px;
 	cursor: pointer;
 	background-image: url("../img/catalog/checkbox-off.svg");
 	fill: #ffffff;
@@ -1226,7 +1231,7 @@ input:checked+label::before {
 	text-transform: uppercase;
 	display: inline-block;
 	margin-left: 87px;
-	padding: 7px 30px;
+	padding: 7px 33px;
 	vertical-align: middle;
 	cursor: pointer;
 	width: 136px;
@@ -1259,7 +1264,7 @@ input:checked+label::before {
 
 .sort h2 {
 	margin-right: 50px;
-	margin-top: 31px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	font-size: 21px;
 	line-height: 26px;
@@ -1270,7 +1275,7 @@ input:checked+label::before {
 	margin-right: 40px;
 	font-size: 12px;
 	line-height: 18px;
-	margin-bottom: 6px;
+	margin-bottom: 8px;
 	margin-left: -3px;
 }
 
@@ -1284,7 +1289,7 @@ input:checked+label::before {
 	width: 245px;
 	margin-right: auto;
 	padding: 0;
-	margin-top: 20px;
+	margin-top: 18px;
 }
 
 .sort-type {
@@ -1378,12 +1383,13 @@ button.sort-down:active {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	max-height: 152px
+	min-height: 152px;
+	margin-top: -2px;
 }
 
 .hotel-photo {
 	width: 138px;
-	margin-top: 30px;
+	margin-top: 31px;
 }
 
 .result-item {
@@ -1402,14 +1408,14 @@ li.hotel-info-block {
 	margin: 0;
 	margin-left: 28px;
 	width: 275px;
-	margin-top: -2px;
+	margin-top: 1px;
 }
 
 .name {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
-	padding-top: 27px;
+	padding-top: 26px;
 	margin-left: 1px;
 }
 
@@ -1432,7 +1438,7 @@ li.hotel-info-block {
 .category {
 	width: 100px;
 	padding: 0;
-	margin-top: 4px;
+	margin-top: 2px;
 	margin-bottom: 0;
 	margin-right: 11px;
 	text-align: left;
@@ -1441,7 +1447,7 @@ li.hotel-info-block {
 .price {
 	width: 100px;
 	padding: 0;
-	margin-top: 5px;
+	margin-top: 3px;
 	margin-bottom: 0;
 	margin-right: 15px;
 	text-align: left;
@@ -1521,10 +1527,9 @@ p.stars {
 	color: #ffffff;
 	background-color: #81b3d2;
 	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 	font-size: 14px;
 	line-height: 21px;
-	max-height: 28px;
 	margin-right: 4px;
 	margin-left: 1px;
 }
@@ -1551,8 +1556,7 @@ p.stars {
 	font-weight: bold;
 	font-family: 'PT Sans', Arial, sans-serif;
 	margin-top: 10px;
-	margin-bottom: 5px;
-	max-height: 28px;
+	margin-bottom: 6px;
 }
 
 .button-book:hover {
