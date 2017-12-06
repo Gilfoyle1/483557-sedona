@@ -1092,6 +1092,7 @@ span.web-by {
 	background-image: url("../img/catalog/checkbox-off.svg");
 	fill: #ffffff;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 input:focus+label::before {
