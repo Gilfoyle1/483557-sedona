@@ -1,1 +1,1 @@
-var searchButton=document.querySelector(".button-search"),form=document.querySelector(".section-form");form.classList.add("form-hide");searchButton.addEventListener("click",function(){form.classList.toggle("form-hide")});
+var button=document.querySelector(".button-search"),form=document.querySelector(".section-form"),arrival=document.querySelector("[name=arrival-date]");button.addEventListener("click",function(a){a.preventDefault();form.classList.toggle("section-form-show");arrival.focus()});
