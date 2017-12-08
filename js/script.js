@@ -6,6 +6,6 @@ var arrival = document.querySelector("[name=arrival-date]")
 			
 button.addEventListener( "click", function (event) {
 	event.preventDefault();
-	form.classList.toggle("section-form-show");
+	form.classList.toggle("section-form");
 	arrival.focus();
 } )
