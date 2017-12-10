@@ -85,7 +85,6 @@ img {
 	line-height: 26px;
 	color: #000000;
 	background-color: #ffffff;
-	max-height: 56px;
 }
 
 .site-navigation {
@@ -548,31 +547,31 @@ ul.description-list {
 @-webkit-keyframes bounce {
 		0% {
 			-webkit-transform: translateY(0);
-			        transform: translateY(0);
+			transform: translateY(0);
 	}
 	
-		30%  {
+		30% {
     		-webkit-transform: translateY(40px);
-    		        transform: translateY(40px);
+    		transform: translateY(40px);
   	}
 	
 		50% {
 			-webkit-transform: translateY(-20px);
-			        transform: translateY(-20px);
+			transform: translateY(-20px);
 	}
 	
 		70% {
 			-webkit-transform: translateY(30px);
-			        transform: translateY(30px);
+			transform: translateY(30px);
 	}
   		
-		90%  {
+		90% {
     		-webkit-transform: translateY(-10px);
-    		        transform: translateY(-10px);
+    		transform: translateY(-10px);
 	}
   	
 		100% {
-    -webkit-transform: translateY(0);
+            -webkit-transform: translateY(0);
             transform: translateY(0);
   }
 
