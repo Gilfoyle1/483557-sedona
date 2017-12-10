@@ -284,17 +284,20 @@ img {
 .advice-item-motel img {
 	margin-top: 60px;
 	margin-bottom: 20px;
+	max-width: 75px;
 }
 
 .advice-food-item img {
 	margin-top: 61px;
 	margin-bottom: 21px;
 	margin-right: 4px;
+	max-width: 75px;
 }
 
 .advice-souvenirs-item img {
 	margin-top: 57px;
 	margin-bottom: 19px;
+	max-width: 75px;
 }
 
 .advice-item-motel, 
@@ -1420,6 +1423,10 @@ button.sort-down:active {
 .hotel-photo {
 	width: 138px;
 	margin-top: 31px;
+}
+
+.hotel-photo img {
+	max-width: 135px;
 }
 
 .result-item {
